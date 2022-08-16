@@ -3,6 +3,9 @@ name = "sparse_table"
 version = "0.1.0"
 edition = "2021"
 description = "SparseTable Struct"
+license = "MIT"
+homepage = "https://github.com/DawnMagnet/SparseTable"
+repository = "https://github.com/DawnMagnet/SparseTable"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
