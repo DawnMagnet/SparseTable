@@ -1,8 +1,8 @@
-struct SparseTree {
+struct SparseTable {
     pub dp: Vec<Vec<i32>>,
     op: fn(i32, i32) -> i32,
 }
-impl SparseTree {
+impl SparseTable {
     pub fn init(v: &Vec<i32>, op: fn(i32, i32) -> i32) -> Self {
         let len = v.len();
         let wid = (v.len() as f64).log2().ceil() as usize + 1;
@@ -17,7 +17,7 @@ impl SparseTree {
                 }
             }
         }
-        SparseTree { dp, op }
+        SparseTable { dp, op }
     }
     pub fn query(&self, l: usize, r: usize) -> i32 {
         if l > r || l > self.dp.len() || r > self.dp.len() {
@@ -43,7 +43,7 @@ mod tests {
         for i in 0..100 {
             v[i] = i as i32;
         }
-        let spt = SparseTree::init(&v, max);
+        let spt = SparseTable::init(&v, max);
         for i in 0..100 {
             for j in i..100 {
                 assert_eq!(spt.query(i, j), j as i32);
