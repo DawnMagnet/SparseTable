@@ -1,4 +1,4 @@
-struct SparseTable {
+pub struct SparseTable {
     pub dp: Vec<Vec<i32>>,
     op: fn(i32, i32) -> i32,
 }
