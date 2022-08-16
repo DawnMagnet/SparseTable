@@ -2,7 +2,7 @@
 name = "sparse_table"
 version = "0.1.1"
 edition = "2021"
-description = "SparseTable Struct"
+description = "SparseTable Struct / ST表数据结构"
 license = "MIT"
 homepage = "https://github.com/DawnMagnet/SparseTable"
 repository = "https://github.com/DawnMagnet/SparseTable"
